@@ -1,0 +1,120 @@
+<!DOCTYPE  html>
+<html>
+  <title>Infinity Closet|Cart</title>
+  <head>
+    <meta charset="UTp-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    
+  </head>
+  <body style="font-family: sans-serif;">
+    <header id="navbar">
+      <div id="home">
+        <a
+          href="#"
+          id="hamburgerMenu"
+          style="left: 0; top: 25vh; position: fixed;"
+          onclick="showSideBar()"
+          ><img src="./assets/icons/menu-icon.png" height="35px"
+        /></a>
+        <a id="homeNav" href="../../Html/index.html">Logo</a>
+
+        <a id="men" href="../../Html/Women's HTML/index.html">Women</a>
+        <a id="men" href="../../Html/Men's HTML/index.html">Men</a>
+      </div>
+      <div id="searchInput">
+        <input id="searchbar" type="text" placeholder="Search..." />
+        <i class="fa fa-search"></i>
+      </div>
+      <div id="userLinks">
+        
+        <a style="margin: 0px 10px; color: white;" href="cart.html"
+          ><img src="./assets/icons/icons8-wardrobe-48.png" height="30px"
+        /></a>
+      </div>
+    </header>
+    <br></br>
+    <h1>Hi Barkha, Have a look at your Closet !</h1>
+    <div class="container-product-categories" style="display: flex;flex-direction: row;">
+        <div style="width:7.5%;text-align:center;">Image</div>
+        <div style="width:20%;text-align:center;">Description</div>
+        <div style="width:5%;text-align:center;">Size</div>
+        <div style="width:13.5%;text-align:center;">Unit(s)</div>
+        <div style="width:10%;text-align:center;">Price</div>
+        <div style="width:15%;text-align:center;">Action</div>
+    </div>
+    <div class="container-main" style="display: flex;flex-direction: row;  ">
+      <div class="container-products"  style="display: flex;flex-direction:column;">
+
+
+
+      <div class="container-product-1" style="display: flex;flex-direction: row;background:#78877c;border-radius: 15px 15px 0px 0px;" >
+        <div style="margin:10px;width:10%;padding: 10px;background-color:#78877c;text-align:center;"><image src="./"></div>
+        <div style="margin:10px;width:25%;padding: 10px;background-color:#78877c;text-align:center;">
+        H&M Men Blue Solid Denim Overshirt
+        </div>
+        <div style="margin:10px;width:10%;padding: 10px;background-color:#78877c;text-align:center;">
+        <select id="size" name="product-1">
+        <option value="extraSmall">XS</option>
+        <option value="small">S</option>
+        <option value="medium">M</option>
+        <option value="large">L</option>
+        <option value="extraLarge">XL</option>
+        <option value="DoubleExtraLarge">XXL</option>
+        </select>
+        </div>
+        <div style="margin:10px;width:15%;padding: 10px;background-color:#78877c;text-align:center;">
+          <input type="number" id="quantity" name="quantity" min="1" max="3">
+        </div>
+        
+        <div style="border-radius:10px;margin:10px;width:15%;padding:10px;background-color:##78877c;text-align:center;">&#8377;1299</div>
+        <div style="margin:10px;width:25%;padding: 10px;background-color:#647568;text-align:center;">
+          <div style="color: green">&#10084;Add to Wishlist</div><div style="color:red">&#10006;Remove from Cart</div>
+        </div>
+      </div>
+      <br></br>
+      <div class="container-product-2" style="display: flex;flex-direction: row;background:#78877c;border-radius: 15px 15px 0px 0px;" >
+        <div style="margin:10px;width:10%;padding: 10px;background-color:#78877c;text-align:center;"><image src="./"></div>
+        <div style="margin:10px;width:25%;padding: 10px;background-color:#78877c;text-align:center;">
+        Levis Relaxed Denim Jeans(Black)
+        </div>
+        <div style="margin:10px;width:10%;padding: 10px;background-color:#78877c;text-align:center;">
+        <select id="size" name="product-2">
+        <option value="extraSmall">XS</option>
+        <option value="small">S</option>
+        <option value="medium">M</option>
+        <option value="large">L</option>
+        <option value="extraLarge">XL</option>
+        <option value="DoubleExtraLarge">XXL</option>
+        </select>
+        </div>
+        <div style="margin:10px;width:15%;padding: 10px;background-color:#78877c;text-align:center;">
+          <input type="number" id="quantity" name="quantity" min="1" max="3">
+        </div>
+        
+        <div style="border-radius:10px;margin:10px;width:15%;padding:10px;background-color:#78877c;text-align:center;">&#8377;1362</div>
+        <div style="margin:10px;width:25%;padding: 10px;background-color:#78877c;text-align:center;">
+          <div style="color: green">&#10084;Add to Wishlist</div><div style="color:red">&#10006;Remove from Cart</div>
+        </div>
+      </div>
+
+
+      </div>
+
+      <div class="container-invoice" style="margin: 10px;width: 25%;padding: 10px;background-color:black;text-align: center;flex-grow: 1;border-radius: 15px;">
+      <div style="color:white;">Grand Total</div><div style="color:white;">&#8377;2661</div>
+    </div>
+    </div>
+ </body>
+</html>
