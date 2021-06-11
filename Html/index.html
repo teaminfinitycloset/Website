@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./homepage.css"
+    />
     <title>Infinity Closet</title>
   </head>
   <body style="width: 100vw; height: 100vh; background-color: #f2f2f2;">
@@ -27,7 +31,7 @@
           onclick="showSideBar()"
           ><img src="./assets/icons/menu-icon.png" height="35px"
         /></a>
-        <a id="homeNav" href="#">Logo</a>
+        <a id="homeNav" href="./index.html"><img src="../assets/icons/logo.webp" alt="logo"></a>
 
         <a id="men" href="../Html/Men's HTML/index.html">Men</a>
         <a id="men" href="../Html/Women's HTML/index.html">Women</a>
@@ -45,8 +49,95 @@
       </div>
     </header>
 
-    <div id="homePage">
-      <h1 style="font-size: 5em;">Home Page</h1>
+    <div class="mySlides fade">
+      <!-- <div class="numbertext"></div> -->
+      <a href="./productDetails.html">
+        <img src="../assets/images/womenClothesImages/dress1.webp"/>
+      </a> 
     </div>
+    
+    <div class="mySlides fade">
+      <a href="./productDetails.html">
+        <img src="../assets/images/menClothesImages/formal1.webp">
+      </a>
+    </div>
+    
+    <div class="mySlides fade">
+      <a href="./productDetails.html">
+        <img src="../assets/images/womenClothesImages/dress1.webp"/>
+      </a> 
+    </div>
+
+    <div class="mySlides fade">
+      <a href="./productDetails.html">
+        <img src="../assets/images/menClothesImages/formal1.webp">
+      </a>
+    </div>
+    
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2500); // Change image every 2 seconds
+    }
+
+    </script>
+
+  <div  style="margin-left: 2em;" class="deals">
+    <h3>DEALS OF THE DAY</h3>
+    <br>
+    <div class="flex-container">
+      <div class="flex-item">
+        Min 30% off on men's casuals
+        <!-- <a href="./productDetails.html">
+          <img src="../assets/images/womenClothesImages/dress1.webp"/>
+        </a>  -->
+      </div>
+      <div class="flex-item">
+        Min 60% off on tops and tees
+        <!-- <a href="./productDetails.html">
+          <img src="../assets/images/menClothesImages/formal1.webp"/>
+        </a>  -->
+      </div>
+      <div class="flex-item">
+        Must buy under 999
+        <!-- <a href="./productDetails.html">
+          <img src="../assets/images/womenClothesImages/dress1.webp"/>
+        </a>  -->
+      </div>
+      <div class="flex-item">
+        Upto 70% off on selected items
+        <!-- <a href="./productDetails.html">
+          <img src="../assets/images/menClothesImages/formal1.webp"/>
+        </a>  -->
+      </div>
+
+    </div>
+  </div>
+
+
   </body>
 </html>
